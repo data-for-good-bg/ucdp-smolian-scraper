@@ -5,7 +5,7 @@ from main_code.functions import merge_files
 from main_code.functions import drop_empty_files, transform_clean_data
 from main_code.functions import get_latest_merged_file
 from main_code.wood_spyder import WoodSpider
-from main_code.images import create_heatmap
+#from main_code.images import create_heatmap
 from settings import path, selected_files, crawl_all
 from importlib import reload
 reload(logging)
@@ -16,7 +16,7 @@ logging.basicConfig(filename=filename,
                     datefmt='%H:%M:%S',
                     level=logging.DEBUG)
 
-start_crawl = True
+start_crawl = False
 
 logging.info('>>>>> Start of UCDP SMOLIAN script')
 logging.info(f'>>>>> Crawl UCDP SMOLIAN: {start_crawl} ......')
