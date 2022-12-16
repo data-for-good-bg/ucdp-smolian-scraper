@@ -16,7 +16,7 @@ logging.basicConfig(filename=filename,
                     datefmt='%H:%M:%S',
                     level=logging.DEBUG)
 
-start_crawl = False
+start_crawl = True
 
 logging.info('>>>>> Start of UCDP SMOLIAN script')
 logging.info(f'>>>>> Crawl UCDP SMOLIAN: {start_crawl} ......')

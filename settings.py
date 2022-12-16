@@ -2,7 +2,7 @@ import os
 
 # -------- SETTINGS DEFINED BY USER
 crawl_all = False  # do we want to craw all pages (~76) if FALSE - only the most recent archive
-
+GLOBAL_NAME='UCDP-SMOLIAN'
 # input selected files in case you want some specific files to be downloaded
 # (if those already exists, they will not be downloaded -> todo: rewrite to overwrite them
 selected_files = ['https://auction.ucdp-smolian.com/publicInfo?printid=2321994d85d661d792223f647000c65f'
