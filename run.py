@@ -7,19 +7,21 @@ from main_code.functions import get_latest_merged_file
 from main_code.wood_spyder import WoodSpider
 #from main_code.images import create_heatmap
 from settings import path, selected_files, crawl_all
+from settings import GLOBAL_NAME
+
 from importlib import reload
 reload(logging)
 filename = f'{os.path.join(os.getcwd())}/logging.log'
 logging.basicConfig(filename=filename,
-                    filemode='a',
+                    filemode='w', #'a',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',
                     level=logging.DEBUG)
 
 start_crawl = True
 
-logging.info('>>>>> Start of UCDP SMOLIAN script')
-logging.info(f'>>>>> Crawl UCDP SMOLIAN: {start_crawl} ......')
+logging.info(f'>>>>> Start of {GLOBAL_NAME} script')
+logging.info(f'>>>>> Crawl {GLOBAL_NAME}: {start_crawl} ......')
 
 
 if start_crawl != True:
@@ -37,7 +39,7 @@ else:
 
     logging.info(f'......................SPYDER CRAWLER END......................')
     logging.info(f'>>>>> Finish craw with export path: {path.upper()} ......')
-    merge_files(path=path, delete_prior=True)
+    merge_files(path=path, delete_prior=False)
 
 #cleaning part
 drop_empty_files(path='exports/archive')

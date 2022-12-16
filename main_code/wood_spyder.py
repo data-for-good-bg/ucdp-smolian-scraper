@@ -7,20 +7,21 @@ from main_code.functions import extract_competitors
 from main_code.functions import get_latest_merged_file
 from settings import selected_files
 from settings import crawl_all
-from settings import MAIN_PATH, path
+from settings import MAIN_PATH, path, GLOBAL_NAME
+from settings import allowed_domains, start_urls, base_url
 
 extracted_urls, data = get_latest_merged_file(path=path)
 logging.info(f'>>>>> # observations in latest merge: {len(data)} ......')
 
 class WoodSpider(scrapy.Spider):
     name = 'spider'
-    allowed_domains = ['auction.ucdp-smolian.com']
-    start_urls = ['https://auction.ucdp-smolian.com/publicInfo?view=archive']
-    base_url = 'https://auction.ucdp-smolian.com'
+    allowed_domains = allowed_domains
+    start_urls = start_urls
+    base_url = base_url
 
     custom_settings = {
         'FEEDS': {
-            f'{os.path.join(MAIN_PATH,path)}/export_ucdp-smolian_{datetime.now()}.json': {
+            f'{os.path.join(MAIN_PATH,path)}/export_{GLOBAL_NAME.lower()}_{datetime.now()}.json': {
                 'format': 'json',
                 'overwrite': True
             }
@@ -73,6 +74,7 @@ class WoodSpider(scrapy.Spider):
         _dict = {}
 
         _dict['#urls'] = len(all_content.xpath('.//td/a/@href').extract())
+#         _dict['ДП']= dp_name
 
         for i, content in enumerate(all_content):
 
@@ -83,7 +85,7 @@ class WoodSpider(scrapy.Spider):
                 if len(url) >= 1:
                     contents = content.xpath('.//td//text()').extract()  # contains titles + data
                     value = contents[0]
-                    _dict[value.split(' - ')[0]] = 'https://auction.ucdp-smolian.com' + url[0]
+                    _dict[value.split(' - ')[0]] = base_url + url[0]
 
             # if it does not contain a link
             else:
@@ -138,11 +140,16 @@ class WoodSpider(scrapy.Spider):
 
         else:
             url = relevant_urls[0]
-            competitors = extract_competitors(url, path='exports/protocols')
-            _dict['брой участници (споменати)'] = competitors[0]
-            _dict['участници (извлечени)'] = str(competitors[1])
-            _dict['брой участници (извлечени)'] = len(competitors[1])
-            _dict['страници протокол'] = competitors[2]
+            try:
+                logging.info(f'Extracting competitors from {relevant_urls}')
+                competitors = extract_competitors(url, path='exports/protocols')
+                _dict['брой участници (споменати)'] = competitors[0]
+                _dict['участници (извлечени)'] = str(competitors[1])
+                _dict['брой участници (извлечени)'] = len(competitors[1])
+                _dict['страници протокол'] = competitors[2]
+            except:
+                logging.error(f'Error processing competitors for {relevant_urls}')
+                
 
         fields_mapping = {'url': 'url'
             , 'ДП': 'ДП'

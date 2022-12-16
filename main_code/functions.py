@@ -192,38 +192,45 @@ def extract_competitors(url, path='exports/protocols'):
         return ['ERROR No pdf file provided']
 
     with open(f"{os.path.join(MAIN_PATH, path, filename)}", 'wb') as pdf:
-        pdf.write(response.content)
+        try:
+            pdf.write(response.content)
+        except:
+            print('Error saving file')
+            logging.error(f'Error saving file: {filename}')
 
     # extract informtion from downloaded file
-    with open(f'{os.path.join(MAIN_PATH, path, filename)}', 'rb') as pdfFileObj:
-        pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+    try:
+        with open(f'{os.path.join(MAIN_PATH, path, filename)}', 'rb') as pdfFileObj:
+            pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 
-        mentioned_requests = np.nan
-        set_requests = []
+            mentioned_requests = np.nan
+            set_requests = []
 
-        # checking first 8 pages
-        num_pages = pdfReader.numPages
-        for page in range(0, np.min([num_pages, 8])):
-            pageObj = pdfReader.getPage(page)
+            # checking first 8 pages
+            num_pages = pdfReader.numPages
+            for page in range(0, np.min([num_pages, 8])):
+                pageObj = pdfReader.getPage(page)
 
-            try:
-                text = pageObj.extractText()
-                text = text.replace('Заявка с Вх. №', 'Заявка с Вх №')
-                text = text.replace('както следва:', 'както следва.')
+                try:
+                    text = pageObj.extractText()
+                    text = text.replace('Заявка с Вх. №', 'Заявка с Вх №')
+                    text = text.replace('както следва:', 'както следва.')
 
-                text_filtered = text.replace(' ', '').replace('\n', '')
-                if 'неерегистрираннитоединучастник' in text_filtered and 'ЗаявкасВх№' not in text:
-                    #                     set_requests.append('не е регистриран нито един участник')
-                    pass
-                else:
-                    for sent in sent_tokenize(text):
-                        if 'заучастиесапостъпили' in sent.replace(' ', '') and 'броя' in sent:
-                            mentioned_requests = int(re.findall(r'\d+ броя', sent)[0].split('броя')[0])
-                        if 'Заявка с Вх №' in sent:
-                            request = sent.split('депозирана от ')[-1]
-                            set_requests.append(request)
-            except:
-                print(f'Protocol: {filename} ..... Error with text on page: {page + 1}')
-                continue
+                    text_filtered = text.replace(' ', '').replace('\n', '')
+                    if 'неерегистрираннитоединучастник' in text_filtered and 'ЗаявкасВх№' not in text:
+                        #                     set_requests.append('не е регистриран нито един участник')
+                        pass
+                    else:
+                        for sent in sent_tokenize(text):
+                            if 'заучастиесапостъпили' in sent.replace(' ', '') and 'броя' in sent:
+                                mentioned_requests = int(re.findall(r'\d+ броя', sent)[0].split('броя')[0])
+                            if 'Заявка с Вх №' in sent:
+                                request = sent.split('депозирана от ')[-1]
+                                set_requests.append(request)
+                except:
+                    print(f'Protocol: {filename} ..... Error with text on page: {page + 1}')
+                    continue
+    except:
+        logging.error(f'Error opening and processing file {filename}')
 
     return [mentioned_requests, set_requests, num_pages]
