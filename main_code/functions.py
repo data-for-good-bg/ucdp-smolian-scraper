@@ -10,7 +10,7 @@ from datetime import datetime
 from datetime import date
 from nltk import sent_tokenize
 
-from settings import MAIN_PATH
+from settings import MAIN_PATH, GLOBAL_NAME
 
 # additional functions
 def iserror(value, dict_):
@@ -64,7 +64,7 @@ def merge_files(path='exports/archive', delete_prior=False):
                     if file not in merged_set:
                         merged_set.append(file)
 
-        new_filename = f'merged_ucdp-smolian_{datetime.now()}.json'
+        new_filename = f'merged_{GLOBAL_NAME.lower()}_{datetime.now()}.json'
         with open(os.path.join(MAIN_PATH, path, new_filename), 'w') as f:
             json.dump(merged_set, f)
 
@@ -95,80 +95,91 @@ def get_latest_merged_file(path='exports/archive'):
 def transform_clean_data(data):
     data_frame = pd.DataFrame.from_dict(data)
 
-    assert len(data_frame) == len(data), ' Raw data not same length as input file'
+    assert len(data_frame) == len(data),' Raw data not same length as input file'
 
-    data_frame.to_excel(f'{os.path.join(MAIN_PATH, "exports/excel/")}raw_data_{datetime.now().date()}.xlsx'
-                        , index=False)
+    data_frame.to_excel(f'{os.path.join(os.getcwd(),"exports/excel/")}{GLOBAL_NAME}_raw_data_{datetime.now().date()}.xlsx'
+                        ,index=False)
 
     clean_data = data_frame.copy()
 
     # adjusting columns
-    for key in ['Начална цена', 'Първа цена', 'Втора цена']:
+    for key in ['Начална цена','Първа цена','Втора цена']:
         for index in clean_data.index:
             new_value = np.nan
             try:
-                new_value = float(clean_data[key][index].split(' ')[0])  # лв без ДДС / лева без ДДС
+                new_value = float(clean_data[key][index].split(' ')[0])# лв без ДДС / лева без ДДС
             except:
                 new_value = clean_data[key][index]
 
-            clean_data.loc[index, key] = new_value
+            clean_data.loc[index,key] = new_value
 
-    for key in ['Едра', 'Средна', 'Дребна', 'ОЗМ', 'Дърва за огрев', 'Общо']:
-        clean_data[key] = clean_data[key].apply(
-            lambda x: np.nan if x.split('куб.м.')[0] == ' ' else float(x.split('куб.м.')[0]))
+    #     clean_data.loc[1,'месец']
+
+    for key in ['Едра', 'Средна', 'Дребна','ОЗМ', 'Дърва за огрев', 'Общо']:
+        clean_data[key] = clean_data[key].apply(lambda x: np.nan if x.split('куб.м.')[0] == ' ' or x.split('куб.м.')[0] == ''
+        else float(x.split('куб.м.')[0]))
+
 
     # derived columns
     clean_data['година'] = clean_data['Втора дата'].apply(lambda x: int(x.split(' ')[0].split('.')[2]))
     clean_data['месец'] = clean_data['Втора дата'].apply(lambda x: int(x.split(' ')[0].split('.')[1]))
     clean_data['ден'] = clean_data['Втора дата'].apply(lambda x: int(x.split(' ')[0].split('.')[0]))
-    clean_data['дата'] = clean_data.apply(lambda x: date(x['година'], x['месец'], x['ден']), axis=1)
+    clean_data['дата'] = clean_data.apply(lambda x: date(x['година'], x['месец'],x['ден']), axis = 1)
 
     clean_data['вид търг'] = clean_data['Предмет'].apply(lambda x: 'електронен търг'
     if 'Електронен търг' in x
-    else 'електронен конкурс' if 'Електронен конкурс' in x else x)
+    else 'електронен конкурс' if 'Електронен конкурс' in x else x )
 
     clean_data['предмет'] = clean_data['Предмет'].apply(lambda x: 'действително добити количества'
     if 'действително добити количества' in x
-    else 'дървесина на прогнозни количества' if 'дървесина на прогнозни количества' in x
+    else 'дървесина на прогнозни количества'  if 'дървесина на прогнозни количества' in x
     else 'дървесина на корен' if 'дървесина на корен' in x
     else np.nan
                                                         )
 
-    clean_data['селище'] = clean_data['ДГС/ДЛС'].apply(
-        lambda x: x.split(' ')[2] if x.split(' ')[-1] == '' else x.split(' ')[-1])
+    clean_data['селище'] = clean_data['ДГС/ДЛС'].apply(lambda x: x.split(' ')[2] if x.split(' ')[-1] == '' else x.split(' ')[-1])
     clean_data['ДГС/ДЛС'] = clean_data['ДГС/ДЛС'].apply(lambda x: x.split(' ')[1])
-    clean_data['МТ индикатор'] = clean_data['Обект№'].apply(lambda x: 1 if 'МТ' in x or "MT" in x else 0)
+
+    for key in ['ДП', 'ДГС/ДЛС','селище', 'Обект№', 'Tърг№']:
+        clean_data[key]=clean_data[key].apply(lambda x:x.strip())
 
     # calculated fields
     clean_data['разлика от начална цена (лв.)'] = clean_data['Първа цена'] - clean_data['Начална цена']
-    clean_data['%от начална цена (лв.)'] = clean_data['Първа цена'] / clean_data['Начална цена'] - 1
+    clean_data['%от начална цена (лв.)'] = clean_data['Първа цена']/clean_data['Начална цена']
+    clean_data['%увеличение'] = clean_data['разлика от начална цена (лв.)']/clean_data['Начална цена']
+
     clean_data['начална цена лв./м3'] = clean_data['Начална цена'] / clean_data['Общо']
     clean_data['крайна цена лв./м3'] = clean_data['Първа цена'] / clean_data['Общо']
 
     # to float
-    for key in ['Начална цена', 'разлика от начална цена (лв.)', '%от начална цена (лв.)'
-        , 'начална цена лв./м3', 'крайна цена лв./м3', 'Първа цена', 'Втора цена', 'брой участници (споменати)'
-        , 'Едра', 'Средна', 'Дребна', 'ОЗМ', 'Дърва за огрев', 'Общо']:
+
+    for key in ['Начална цена','разлика от начална цена (лв.)','%от начална цена (лв.)'
+        ,'начална цена лв./м3','крайна цена лв./м3', 'Първа цена','Втора цена', 'брой участници (споменати)'
+        ,'Едра', 'Средна', 'Дребна','ОЗМ', 'Дърва за огрев', 'Общо']:
         clean_data[key] = clean_data[key].apply(lambda x: float(x))
 
+    if 'други коментари' not in clean_data.columns:
+        clean_data['други коментари']=np.nan
+
     # Sense checks: purva cena >= vtora cena
-    clean_data = clean_data[['дата', 'година', 'месец', 'ден', 'url', 'ДП', 'ДГС/ДЛС', 'селище', 'Обект№','МТ индикатор'
-        , 'Tърг№', 'вид търг', 'предмет', 'Начална цена', 'разлика от начална цена (лв.)', '%от начална цена (лв.)'
-        , 'начална цена лв./м3', 'крайна цена лв./м3', 'Първа цена', 'Втора цена'
-        , 'Първо място', 'Второ място', 'брой участници (споменати)', 'участници (извлечени)'
-        , 'брой участници (извлечени)', 'Дървесен вид', 'Едра', 'Средна', 'Дребна', 'ОЗМ'
-        , 'Дърва за огрев', 'Общо'
+    clean_data = clean_data[['дата','година', 'месец', 'ден','url', 'ДП', 'ДГС/ДЛС','селище', 'Обект№', 'Tърг№'
+        ,'вид търг','предмет', 'Начална цена','разлика от начална цена (лв.)','%от начална цена (лв.)'
+        ,'%увеличение','начална цена лв./м3','крайна цена лв./м3', 'Първа цена','Втора цена'
+        ,'Първо място','Второ място', 'брой участници (споменати)','участници (извлечени)'
+        , 'брой участници (извлечени)','Дървесен вид', 'Едра', 'Средна', 'Дребна','ОЗМ'
+        , 'Дърва за огрев', 'Общо','други коментари'
                              ]]
 
-    # change name of columns
-    clean_data.rename(columns={'Общо': 'Обем дървесина (м3)'}, inplace=True)
-    clean_data.rename(columns={'Първа цена': 'Договорена цена (лв.)'}, inplace=True)
+
+    #change name of columns
+    clean_data.rename(columns = {'Общо':'Обем дървесина (м3)'},inplace = True)
+    clean_data.rename(columns = {'Първа цена':'Договорена цена (лв.)'},inplace = True)
 
     assert len(clean_data) == len(data), 'Some values have dropped while cleaning, please check'
-    clean_data.to_excel(f'{os.path.join(MAIN_PATH, "exports/excel/")}clean_data_{datetime.now().date()}.xlsx'
-                        , index=False)
-    return clean_data
 
+    clean_data.to_excel(f'{os.path.join(os.getcwd(),"exports/excel/")}{GLOBAL_NAME}_clean_data_{datetime.now().date()}.xlsx'
+                        ,index=False)
+    return clean_data
 
 def extract_competitors(url, path='exports/protocols'):
     # download pdf file
