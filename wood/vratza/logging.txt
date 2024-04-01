@@ -1,0 +1,125 @@
+17:27:52,317 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+17:27:52,332 scrapy.extensions.telnet INFO Telnet Password: 44066fe9a7329703
+17:27:52,507 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+17:27:52,509 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6024
+17:27:54,844 filelock DEBUG Attempting to acquire lock 140462878954976 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:27:54,847 filelock INFO Lock 140462878954976 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:27:54,855 filelock DEBUG Attempting to release lock 140462878954976 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:27:54,858 filelock INFO Lock 140462878954976 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:29:20,711 scrapy.extensions.logstats INFO Crawled 4 pages (at 4 pages/min), scraped 41 items (at 41 items/min)
+17:29:55,277 scrapy.extensions.logstats INFO Crawled 5 pages (at 1 pages/min), scraped 61 items (at 20 items/min)
+17:30:15,549 scrapy.extensions.feedexport INFO Stored json feed (97 items) in: exports/archive/export_SZDP-VRATZA_2022-12-21 17:27:28.704718.json
+17:30:15,550 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 2045,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 893453,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 6,
+ 'elapsed_time_seconds': 143.041662,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 21, 15, 30, 15, 548800),
+ 'item_scraped_count': 97,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 223207424,
+ 'memusage/startup': 205979648,
+ 'request_depth_max': 5,
+ 'response_received_count': 6,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/memory': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/memory': 6,
+ 'start_time': datetime.datetime(2022, 12, 21, 15, 27, 52, 507138)}
+17:30:15,706 numexpr.utils INFO Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+17:30:15,707 numexpr.utils INFO NumExpr defaulting to 8 threads.
+17:34:12,69 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+17:34:12,80 scrapy.extensions.telnet INFO Telnet Password: d2e191fae142f2a1
+17:34:12,359 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+17:34:12,361 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6024
+17:34:13,960 filelock DEBUG Attempting to acquire lock 140256720492672 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:34:13,963 filelock INFO Lock 140256720492672 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:34:13,970 filelock DEBUG Attempting to release lock 140256720492672 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:34:13,975 filelock INFO Lock 140256720492672 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:34:24,970 scrapy.extensions.feedexport INFO Stored json feed (97 items) in: exports/archive/export_SZDP-VRATZA_2022-12-21 17:34:12.040215.json
+17:34:24,971 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 2045,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 893453,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 6,
+ 'elapsed_time_seconds': 12.61076,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 21, 15, 34, 24, 969720),
+ 'item_scraped_count': 97,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 6,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 202645504,
+ 'memusage/startup': 202645504,
+ 'request_depth_max': 5,
+ 'response_received_count': 6,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/memory': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/memory': 6,
+ 'start_time': datetime.datetime(2022, 12, 21, 15, 34, 12, 358960)}
+17:34:25,91 numexpr.utils INFO Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+17:34:25,91 numexpr.utils INFO NumExpr defaulting to 8 threads.
+17:40:56,457 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+17:40:56,468 scrapy.extensions.telnet INFO Telnet Password: 34634eaa22b162a6
+17:40:56,748 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+17:40:56,750 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6024
+17:40:58,439 filelock DEBUG Attempting to acquire lock 140313902955296 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:40:58,442 filelock INFO Lock 140313902955296 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:40:58,447 filelock DEBUG Attempting to release lock 140313902955296 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:40:58,449 filelock INFO Lock 140313902955296 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:41:08,232 scrapy.extensions.feedexport INFO Stored json feed (97 items) in: exports/archive/export_SZDP-VRATZA_2022-12-21 17:40:56.428450.json
+17:41:08,233 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 2045,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 893453,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 6,
+ 'elapsed_time_seconds': 11.483733,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 21, 15, 41, 8, 232033),
+ 'item_scraped_count': 97,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 6,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 202457088,
+ 'memusage/startup': 202457088,
+ 'request_depth_max': 5,
+ 'response_received_count': 6,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/memory': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/memory': 6,
+ 'start_time': datetime.datetime(2022, 12, 21, 15, 40, 56, 748300)}
+17:41:08,353 numexpr.utils INFO Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+17:41:08,353 numexpr.utils INFO NumExpr defaulting to 8 threads.

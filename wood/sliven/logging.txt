@@ -1,0 +1,461 @@
+15:52:13,766 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): auction.uidp-sliven.com:443
+15:52:13,974 urllib3.connectionpool DEBUG https://auction.uidp-sliven.com:443 "GET /files/ba30d084773a163e5727edd763ea8a42.rar HTTP/1.1" 200 893234
+17:32:40,146 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+17:32:40,161 scrapy.extensions.telnet INFO Telnet Password: 38973e26c9b4e1e8
+17:32:40,300 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+17:32:40,302 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+17:32:42,499 filelock DEBUG Attempting to acquire lock 140574750771040 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:32:42,504 filelock INFO Lock 140574750771040 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:32:42,510 filelock DEBUG Attempting to release lock 140574750771040 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:32:42,513 filelock INFO Lock 140574750771040 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:34:13,123 scrapy.extensions.logstats INFO Crawled 2 pages (at 2 pages/min), scraped 1 items (at 1 items/min)
+17:34:13,132 scrapy.extensions.feedexport INFO Stored json feed (20 items) in: sliven/archive/export_uidp-sliven_2022-12-14 17:32:33.503467.json
+17:34:13,132 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 614,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 304112,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 92.831303,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 15, 34, 13, 131782),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 286105600,
+ 'memusage/startup': 281075712,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2022, 12, 14, 15, 32, 40, 300479)}
+17:43:28,533 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+17:43:28,547 scrapy.extensions.telnet INFO Telnet Password: 2a48cf4f85b10c48
+17:43:28,769 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+17:43:28,770 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+17:43:30,876 filelock DEBUG Attempting to acquire lock 140499139393664 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:43:30,879 filelock INFO Lock 140499139393664 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:43:30,885 filelock DEBUG Attempting to release lock 140499139393664 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:43:30,890 filelock INFO Lock 140499139393664 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:43:32,973 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 614,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 305276,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 4.203551,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 15, 43, 32, 972557),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 5,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 204898304,
+ 'memusage/startup': 204898304,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2022, 12, 14, 15, 43, 28, 769006)}
+17:44:09,653 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+17:44:09,668 scrapy.extensions.telnet INFO Telnet Password: c4fb8fc58ed61578
+17:44:09,891 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+17:44:09,892 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+17:44:12,475 filelock DEBUG Attempting to acquire lock 140270813693120 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:44:12,479 filelock INFO Lock 140270813693120 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:44:12,485 filelock DEBUG Attempting to release lock 140270813693120 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:44:12,489 filelock INFO Lock 140270813693120 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+17:45:36,461 scrapy.extensions.logstats INFO Crawled 2 pages (at 2 pages/min), scraped 1 items (at 1 items/min)
+17:45:36,469 scrapy.extensions.feedexport INFO Stored json feed (20 items) in: sliven/archive/export_uidp-sliven_2022-12-14 17:43:59.914684.json
+17:45:36,470 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 614,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 305276,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 86.5785,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 15, 45, 36, 469175),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 215392256,
+ 'memusage/startup': 202493952,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2022, 12, 14, 15, 44, 9, 890675)}
+18:14:14,89 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+18:14:14,104 scrapy.extensions.telnet INFO Telnet Password: 82c5caec7e0547cf
+18:14:14,340 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+18:14:14,341 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+18:14:16,361 filelock DEBUG Attempting to acquire lock 140405240048272 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:14:16,365 filelock INFO Lock 140405240048272 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:14:16,371 filelock DEBUG Attempting to release lock 140405240048272 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:14:16,374 filelock INFO Lock 140405240048272 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:15:14,276 scrapy.extensions.feedexport INFO Stored json feed (20 items) in: sliven/archive/export_uidp-sliven_2022-12-14 18:14:03.883123.json
+18:15:14,278 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 614,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 307328,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 59.936763,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 16, 15, 14, 276445),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 6,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 205283328,
+ 'memusage/startup': 205283328,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2022, 12, 14, 16, 14, 14, 339682)}
+18:36:55,899 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+18:36:55,913 scrapy.extensions.telnet INFO Telnet Password: 8986b04c37698f8a
+18:36:56,136 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+18:36:56,137 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+18:36:58,264 filelock DEBUG Attempting to acquire lock 140528914882768 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:36:58,267 filelock INFO Lock 140528914882768 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:36:58,274 filelock DEBUG Attempting to release lock 140528914882768 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:36:58,280 filelock INFO Lock 140528914882768 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:38:10,940 scrapy.extensions.logstats INFO Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+18:38:10,945 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 614,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 307328,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 74.808341,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 16, 38, 10, 944337),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 6,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 215973888,
+ 'memusage/startup': 202645504,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/KeyError': 1,
+ 'start_time': datetime.datetime(2022, 12, 14, 16, 36, 56, 135996)}
+18:47:19,809 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+18:47:19,819 scrapy.extensions.telnet INFO Telnet Password: 2ec58e786d809dcb
+18:47:20,49 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+18:47:20,51 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+18:47:22,197 filelock DEBUG Attempting to acquire lock 140172973811936 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:47:22,200 filelock INFO Lock 140172973811936 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:47:22,206 filelock DEBUG Attempting to release lock 140172973811936 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:47:22,210 filelock INFO Lock 140172973811936 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+18:47:24,399 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 614,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 307328,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 4.348804,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 16, 47, 24, 398265),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 5,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 202244096,
+ 'memusage/startup': 202244096,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2022, 12, 14, 16, 47, 20, 49461)}
+20:52:21,261 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+20:52:21,276 scrapy.extensions.telnet INFO Telnet Password: 2151b02bb70cec08
+20:52:21,502 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+20:52:21,503 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+20:52:23,870 filelock DEBUG Attempting to acquire lock 140343103049056 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:52:23,875 filelock INFO Lock 140343103049056 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:52:23,882 filelock DEBUG Attempting to release lock 140343103049056 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:52:23,885 filelock INFO Lock 140343103049056 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:52:26,195 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 614,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 307328,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 4.692952,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 18, 52, 26, 194797),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 5,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 201801728,
+ 'memusage/startup': 201801728,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2022, 12, 14, 18, 52, 21, 501845)}
+20:53:05,383 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+20:53:05,392 scrapy.extensions.telnet INFO Telnet Password: 636fdf337725ff60
+20:53:05,620 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+20:53:05,622 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+20:53:11,239 filelock DEBUG Attempting to acquire lock 140677629851968 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:53:11,243 filelock INFO Lock 140677629851968 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:53:11,249 filelock DEBUG Attempting to release lock 140677629851968 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:53:11,257 filelock INFO Lock 140677629851968 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:53:15,731 scrapy.extensions.feedexport INFO Stored json feed (20 items) in: sliven/archive/export_uidp-sliven_2022-12-14 20:53:05.358569.json
+20:53:15,733 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 614,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 307328,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 10.111257,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 18, 53, 15, 731635),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 6,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 201310208,
+ 'memusage/startup': 201310208,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2022, 12, 14, 18, 53, 5, 620378)}
+20:54:23,177 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+20:54:23,186 scrapy.extensions.telnet INFO Telnet Password: af754b6dd84740b8
+20:54:23,403 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+20:54:23,404 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+20:54:25,722 filelock DEBUG Attempting to acquire lock 140293179493296 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:54:25,724 filelock INFO Lock 140293179493296 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:54:25,731 filelock DEBUG Attempting to release lock 140293179493296 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:54:25,738 filelock INFO Lock 140293179493296 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+20:55:58,363 scrapy.extensions.logstats INFO Crawled 3 pages (at 3 pages/min), scraped 21 items (at 21 items/min)
+20:57:45,487 scrapy.extensions.logstats INFO Crawled 4 pages (at 1 pages/min), scraped 41 items (at 20 items/min)
+20:59:07,636 scrapy.extensions.logstats INFO Crawled 5 pages (at 1 pages/min), scraped 61 items (at 20 items/min)
+21:00:18,862 scrapy.extensions.logstats INFO Crawled 6 pages (at 1 pages/min), scraped 81 items (at 20 items/min)
+21:01:00,442 scrapy.extensions.logstats INFO Crawled 7 pages (at 1 pages/min), scraped 101 items (at 20 items/min)
+21:01:44,141 scrapy.extensions.logstats INFO Crawled 8 pages (at 1 pages/min), scraped 121 items (at 20 items/min)
+21:02:46,811 scrapy.extensions.logstats INFO Crawled 10 pages (at 2 pages/min), scraped 161 items (at 40 items/min)
+21:04:44,478 scrapy.extensions.logstats INFO Crawled 12 pages (at 2 pages/min), scraped 201 items (at 40 items/min)
+21:05:52,902 scrapy.extensions.logstats INFO Crawled 13 pages (at 1 pages/min), scraped 221 items (at 20 items/min)
+21:06:42,566 scrapy.extensions.logstats INFO Crawled 14 pages (at 1 pages/min), scraped 241 items (at 20 items/min)
+21:07:53,734 scrapy.extensions.logstats INFO Crawled 15 pages (at 1 pages/min), scraped 261 items (at 20 items/min)
+21:08:39,518 scrapy.extensions.logstats INFO Crawled 17 pages (at 2 pages/min), scraped 301 items (at 40 items/min)
+21:10:19,226 scrapy.extensions.logstats INFO Crawled 19 pages (at 2 pages/min), scraped 341 items (at 40 items/min)
+21:12:06,134 scrapy.extensions.logstats INFO Crawled 20 pages (at 1 pages/min), scraped 361 items (at 20 items/min)
+21:13:05,679 scrapy.extensions.logstats INFO Crawled 21 pages (at 1 pages/min), scraped 381 items (at 20 items/min)
+21:14:08,461 scrapy.extensions.logstats INFO Crawled 22 pages (at 1 pages/min), scraped 401 items (at 20 items/min)
+21:15:18,450 scrapy.extensions.logstats INFO Crawled 23 pages (at 1 pages/min), scraped 421 items (at 20 items/min)
+21:16:30,732 scrapy.extensions.logstats INFO Crawled 24 pages (at 1 pages/min), scraped 441 items (at 20 items/min)
+21:17:29,317 scrapy.extensions.logstats INFO Crawled 25 pages (at 1 pages/min), scraped 461 items (at 20 items/min)
+21:19:36,363 scrapy.extensions.logstats INFO Crawled 26 pages (at 1 pages/min), scraped 481 items (at 20 items/min)
+21:20:41,135 scrapy.extensions.logstats INFO Crawled 27 pages (at 1 pages/min), scraped 501 items (at 20 items/min)
+21:21:30,661 scrapy.extensions.logstats INFO Crawled 28 pages (at 1 pages/min), scraped 521 items (at 20 items/min)
+21:23:38,377 scrapy.extensions.logstats INFO Crawled 29 pages (at 1 pages/min), scraped 541 items (at 20 items/min)
+21:24:23,407 scrapy.extensions.logstats INFO Crawled 30 pages (at 1 pages/min), scraped 580 items (at 39 items/min)
+21:25:30,993 scrapy.extensions.logstats INFO Crawled 31 pages (at 1 pages/min), scraped 581 items (at 1 items/min)
+21:26:23,406 scrapy.extensions.logstats INFO Crawled 32 pages (at 1 pages/min), scraped 620 items (at 39 items/min)
+21:27:44,181 scrapy.extensions.logstats INFO Crawled 34 pages (at 2 pages/min), scraped 641 items (at 21 items/min)
+21:29:11,214 scrapy.extensions.logstats INFO Crawled 35 pages (at 1 pages/min), scraped 661 items (at 20 items/min)
+21:31:02,228 scrapy.extensions.logstats INFO Crawled 36 pages (at 1 pages/min), scraped 681 items (at 20 items/min)
+21:32:41,373 scrapy.extensions.logstats INFO Crawled 37 pages (at 1 pages/min), scraped 701 items (at 20 items/min)
+21:33:35,667 scrapy.extensions.logstats INFO Crawled 38 pages (at 1 pages/min), scraped 721 items (at 20 items/min)
+21:34:24,702 scrapy.extensions.logstats INFO Crawled 39 pages (at 1 pages/min), scraped 741 items (at 20 items/min)
+21:35:48,132 scrapy.extensions.logstats INFO Crawled 40 pages (at 1 pages/min), scraped 761 items (at 20 items/min)
+21:37:46,739 scrapy.extensions.logstats INFO Crawled 41 pages (at 1 pages/min), scraped 781 items (at 20 items/min)
+21:39:54,906 scrapy.extensions.logstats INFO Crawled 42 pages (at 1 pages/min), scraped 801 items (at 20 items/min)
+21:41:00,659 scrapy.extensions.logstats INFO Crawled 43 pages (at 1 pages/min), scraped 821 items (at 20 items/min)
+21:42:28,269 scrapy.extensions.logstats INFO Crawled 44 pages (at 1 pages/min), scraped 841 items (at 20 items/min)
+21:43:28,669 scrapy.extensions.logstats INFO Crawled 45 pages (at 1 pages/min), scraped 861 items (at 20 items/min)
+21:44:32,583 scrapy.extensions.logstats INFO Crawled 46 pages (at 1 pages/min), scraped 881 items (at 20 items/min)
+21:46:58,24 scrapy.extensions.logstats INFO Crawled 47 pages (at 1 pages/min), scraped 901 items (at 20 items/min)
+21:47:56,219 scrapy.extensions.logstats INFO Crawled 48 pages (at 1 pages/min), scraped 921 items (at 20 items/min)
+21:49:20,312 scrapy.extensions.logstats INFO Crawled 49 pages (at 1 pages/min), scraped 941 items (at 20 items/min)
+21:51:12,80 scrapy.extensions.logstats INFO Crawled 50 pages (at 1 pages/min), scraped 961 items (at 20 items/min)
+21:54:27,249 scrapy.extensions.logstats INFO Crawled 51 pages (at 1 pages/min), scraped 981 items (at 20 items/min)
+21:55:48,860 scrapy.extensions.logstats INFO Crawled 52 pages (at 1 pages/min), scraped 1001 items (at 20 items/min)
+21:56:58,662 scrapy.extensions.logstats INFO Crawled 53 pages (at 1 pages/min), scraped 1021 items (at 20 items/min)
+21:57:56,659 scrapy.extensions.logstats INFO Crawled 54 pages (at 1 pages/min), scraped 1041 items (at 20 items/min)
+21:59:29,147 scrapy.extensions.logstats INFO Crawled 55 pages (at 1 pages/min), scraped 1061 items (at 20 items/min)
+22:02:31,932 scrapy.extensions.logstats INFO Crawled 56 pages (at 1 pages/min), scraped 1081 items (at 20 items/min)
+22:03:55,330 scrapy.extensions.logstats INFO Crawled 57 pages (at 1 pages/min), scraped 1101 items (at 20 items/min)
+22:04:56,863 scrapy.extensions.logstats INFO Crawled 58 pages (at 1 pages/min), scraped 1121 items (at 20 items/min)
+22:07:22,853 scrapy.extensions.logstats INFO Crawled 59 pages (at 1 pages/min), scraped 1141 items (at 20 items/min)
+22:07:23,405 scrapy.extensions.logstats INFO Crawled 59 pages (at 0 pages/min), scraped 1160 items (at 19 items/min)
+22:08:57,954 scrapy.extensions.logstats INFO Crawled 60 pages (at 1 pages/min), scraped 1161 items (at 1 items/min)
+22:09:52,499 scrapy.extensions.logstats INFO Crawled 61 pages (at 1 pages/min), scraped 1181 items (at 20 items/min)
+22:11:03,732 scrapy.extensions.logstats INFO Crawled 62 pages (at 1 pages/min), scraped 1201 items (at 20 items/min)
+22:14:04,305 scrapy.extensions.logstats INFO Crawled 63 pages (at 1 pages/min), scraped 1221 items (at 20 items/min)
+22:16:25,653 scrapy.extensions.logstats INFO Crawled 64 pages (at 1 pages/min), scraped 1241 items (at 20 items/min)
+22:17:58,780 scrapy.extensions.logstats INFO Crawled 66 pages (at 2 pages/min), scraped 1281 items (at 40 items/min)
+22:18:55,967 scrapy.extensions.logstats INFO Crawled 67 pages (at 1 pages/min), scraped 1301 items (at 20 items/min)
+22:20:08,161 scrapy.extensions.logstats INFO Crawled 68 pages (at 1 pages/min), scraped 1321 items (at 20 items/min)
+22:24:08,243 scrapy.extensions.logstats INFO Crawled 69 pages (at 1 pages/min), scraped 1341 items (at 20 items/min)
+22:28:02,401 scrapy.extensions.logstats INFO Crawled 70 pages (at 1 pages/min), scraped 1361 items (at 20 items/min)
+22:29:19,813 scrapy.extensions.logstats INFO Crawled 71 pages (at 1 pages/min), scraped 1381 items (at 20 items/min)
+22:29:56,244 scrapy.extensions.logstats INFO Crawled 72 pages (at 1 pages/min), scraped 1401 items (at 20 items/min)
+22:30:47,80 scrapy.extensions.logstats INFO Crawled 73 pages (at 1 pages/min), scraped 1421 items (at 20 items/min)
+22:30:47,84 scrapy.extensions.feedexport INFO Stored json feed (1437 items) in: archive/export_uidp-sliven_2022-12-14 20:54:23.095124.json
+22:30:47,84 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 27762,
+ 'downloader/request_count': 73,
+ 'downloader/request_method_count/GET': 73,
+ 'downloader/response_bytes': 11574043,
+ 'downloader/response_count': 73,
+ 'downloader/response_status_count/200': 73,
+ 'elapsed_time_seconds': 5783.681099,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 14, 20, 30, 47, 84032),
+ 'item_scraped_count': 1437,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 72,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 246165504,
+ 'memusage/startup': 201928704,
+ 'request_depth_max': 72,
+ 'response_received_count': 73,
+ 'scheduler/dequeued': 73,
+ 'scheduler/dequeued/memory': 73,
+ 'scheduler/enqueued': 73,
+ 'scheduler/enqueued/memory': 73,
+ 'start_time': datetime.datetime(2022, 12, 14, 18, 54, 23, 402933)}
+11:11:58,166 numexpr.utils INFO Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+11:11:58,166 numexpr.utils INFO NumExpr defaulting to 8 threads.
+22:53:50,40 numexpr.utils INFO Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+22:53:50,41 numexpr.utils INFO NumExpr defaulting to 8 threads.
+22:57:52,250 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+22:57:52,264 scrapy.extensions.telnet INFO Telnet Password: ec86b42480c8f24d
+22:57:52,440 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+22:57:52,442 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6025
+22:57:53,859 filelock DEBUG Attempting to acquire lock 140488940237584 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+22:57:53,860 filelock INFO Lock 140488940237584 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+22:57:53,861 filelock DEBUG Attempting to release lock 140488940237584 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+22:57:53,862 filelock INFO Lock 140488940237584 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+22:59:01,280 scrapy.extensions.logstats INFO Crawled 3 pages (at 3 pages/min), scraped 21 items (at 21 items/min)
+22:59:52,814 scrapy.extensions.logstats INFO Crawled 8 pages (at 5 pages/min), scraped 121 items (at 100 items/min)
+23:00:52,445 scrapy.extensions.logstats INFO Crawled 33 pages (at 25 pages/min), scraped 640 items (at 519 items/min)
+23:01:52,441 scrapy.extensions.logstats INFO Crawled 56 pages (at 23 pages/min), scraped 1100 items (at 460 items/min)
+23:02:25,849 scrapy.extensions.feedexport INFO Stored json feed (1471 items) in: exports/archive/export_UIDP-SLIVEN_2022-12-16 22:57:49.776628.json
+23:02:25,850 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 28530,
+ 'downloader/request_count': 75,
+ 'downloader/request_method_count/GET': 75,
+ 'downloader/response_bytes': 11843654,
+ 'downloader/response_count': 75,
+ 'downloader/response_status_count/200': 75,
+ 'elapsed_time_seconds': 273.409829,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 16, 21, 2, 25, 849603),
+ 'item_scraped_count': 1471,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 254128128,
+ 'memusage/startup': 219734016,
+ 'request_depth_max': 74,
+ 'response_received_count': 75,
+ 'scheduler/dequeued': 75,
+ 'scheduler/dequeued/memory': 75,
+ 'scheduler/enqueued': 75,
+ 'scheduler/enqueued/memory': 75,
+ 'start_time': datetime.datetime(2022, 12, 16, 20, 57, 52, 439774)}

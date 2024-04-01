@@ -1,0 +1,128 @@
+11:56:49,407 root INFO >>>>> Start of UCDP SMOLIAN script
+11:56:49,407 root INFO >>>>> Crawl UCDP SMOLIAN: True ......
+11:56:49,407 root INFO >>>>> Crawl all pages: True ......
+11:56:49,407 root INFO ......................SPYDER CRAWLER START......................
+11:56:49,408 root INFO >>>>> # observations in latest merge: 0 ......
+11:56:49,432 py.warnings WARNING /opt/anaconda3/lib/python3.8/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+11:56:49,441 scrapy.extensions.telnet INFO Telnet Password: 1b9d05bbd0c35b35
+11:56:49,648 scrapy.extensions.logstats INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+11:56:49,650 scrapy.extensions.telnet INFO Telnet console listening on 127.0.0.1:6023
+11:56:50,161 filelock DEBUG Attempting to acquire lock 140415635301856 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+11:56:50,165 filelock INFO Lock 140415635301856 acquired on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+11:56:50,170 filelock DEBUG Attempting to release lock 140415635301856 on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+11:56:50,174 filelock INFO Lock 140415635301856 released on /Users/bilyanavencheva/.cache/python-tldextract/3.8.8.final__anaconda3__afc312__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+11:56:50,310 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=1cfead9959b76ce44a847c850b61c587
+11:56:50,319 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=ffbd6cbb019a1413183c8d08f2929307
+11:56:50,321 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=9e6a921fbc428b5638b3986e365d4f21
+11:56:50,322 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=87f4d79e36d68c3031ccf6c55e9bbd39
+11:56:50,324 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=532b7cbe070a3579f424988a040752f2
+11:56:50,326 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=bbb001ba009ed11717eaec9305b2feb6
+11:56:50,327 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=366f0bc7bd1d4bf414073cabbadfdfcd
+11:56:50,329 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=58191d2a914c6dae66371c9dcdc91b41
+11:56:50,350 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=8b313cbf30999888de32da1ec83ff503
+11:56:50,351 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=f0031c7a91d74015a9addfbc589f3fe5
+11:56:50,352 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=f42c7f9c8aeab0fc412031e192e2119d
+11:56:50,354 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=f231f2107df69eab0a3862d50018a9b2
+11:56:50,355 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=097e26b2ffb0339458b55da17425a71f
+11:56:50,356 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=a2d10d355cdebc879e4fc6ecc6f63dd7
+11:56:50,356 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=2e0aca891f2a8aedf265edf533a6d9a8
+11:56:50,357 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=7c78335a8924215ea5c22fda1aac7b75
+11:56:50,359 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=019f8b946a256d9357eadc5ace2c8678
+11:56:50,360 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=9f8684e630c4c30cad7b1f0935cd62ab
+11:56:50,364 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=ca1d3153a1cf0ed998d4879fbb50d9ab
+11:56:50,366 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=dff8e9c2ac33381546d96deea9922999
+11:56:54,620 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=c6a01432c8138d46ba39957a8250e027
+11:56:54,628 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=c922de9e01cba8a4684f6c3471130e4c
+11:56:54,630 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=54fda78aa8a09b4d77b5aaec57b75028
+11:56:54,631 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=fb2606a5068901da92473666256e6e5b
+11:56:54,632 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=7221e5c8ec6b08ef6d3f9ff3ce6eb1d1
+11:56:54,635 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=35937e34256cf4e5b2f7da08871d2a0b
+11:56:54,636 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=8b8388180314a337c9aa3c5aa8e2f37a
+11:56:54,654 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=2ecd2bd94734e5dd392d8678bc64cdab
+11:56:54,655 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=8c9a14ffebb7677d033ffce847991293
+11:56:54,656 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=86b20716fbd5b253d27cec43127089bc
+11:56:54,657 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=e8bf0f27d70d480d3ab793bb7619aaa5
+11:56:54,658 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=747d3443e319a22747fbb873e8b2f9f2
+11:56:54,659 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=92a08bf918f44ccd961477be30023da1
+11:56:54,660 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=bd85282513da4089c441926e1975898c
+11:56:54,661 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=0afa92fc0f8a9cf051bf2961b06ac56b
+11:56:54,662 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=a41b3bb3e6b050b6c9067c67f663b915
+11:56:54,668 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=1160453108d3e537255e9f7b931f4e90
+11:56:54,668 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=5d4ae76f053f8f2516ad12961ef7fe97
+11:56:54,669 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=38ed162a0dbef7b3fe0f628aa08b90e7
+11:56:54,670 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=d87c68a56bc8eb803b44f25abb627786
+11:56:55,708 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=32b3ee0272954b956a7d1f86f76afa21
+11:56:55,709 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=77ee3bc58ce560b86c2b59363281e914
+11:56:55,717 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=98c39996bf1543e974747a2549b3107c
+11:56:55,718 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=32cbf687880eb1674a07bf717761dd3a
+11:56:55,720 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=9aeade7beada35c83d3b344fbafe43b0
+11:56:55,722 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=fdbd31f2027f20378b1a80125fc862db
+11:56:55,723 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=b22b257ad0519d4500539da3c8bcf4dd
+11:56:55,724 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=2227d753dc18505031869d44673728e2
+11:56:55,725 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=2b45e8d6abf59038a975faeeb6dc0782
+11:56:55,726 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=55d99a37b2e1badba7c8df4ccd506a88
+11:56:55,734 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=99ef04eb612baf0e86671a5109e22154
+11:56:55,735 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=9808ae38758804501ca3fc0697050e03
+11:56:55,736 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=29539ed932d32f1c56324cded92c07c2
+11:56:55,737 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=d60678e8f2ba9c540798ebbde31177e8
+11:56:55,738 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=6a4d5952d4c018a1c1af9fa590a10dda
+11:56:55,738 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=45c166d697d65080d54501403b433256
+11:56:55,739 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=ce47be4abd80ac324c645fd57a27fc73
+11:56:55,740 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=59dfa2df42d9e3d41f5b02bfc32229dd
+11:56:55,741 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=d3630410c51e60941a9001a46871070e
+11:56:55,742 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=ba95d78a7c942571185308775a97a3a0
+11:56:56,464 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=91378b331327b40e564390c43cd6b2be
+11:56:56,465 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=c20a7ce2a627ba838cfbff082db35197
+11:56:56,466 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=f4aa0dd960521e045ae2f20621fb4ee9
+11:56:56,467 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=8051a3c40561002834e59d566b7430cf
+11:56:56,467 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=8832ae39136fb470b3fbbf9f47b4570d
+11:56:56,468 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=07c4b1fdd1ef8da2d7e9393071204b71
+11:56:56,469 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=f023559c6d59c04e3804209f573dbff9
+11:56:56,469 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=766e428d1e232bbdd58664b41346196c
+11:56:56,470 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=68a9750337a418a86fe06c1991a1d64c
+11:56:56,471 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=563ca5e068bc78b807910338bb4d4279
+11:56:56,477 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=7f01c939761597f9b832694d4c381512
+11:56:56,478 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=6c4bb406b3e7cd5447f7a76fd7008806
+11:56:56,479 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=721e7285b298cde5b3d0c973ed8d7b63
+11:56:56,480 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=b08354f3688c4e4e8c52c207d7d5b8c3
+11:56:56,481 root INFO Extracting........: https://auction.ucdp-smolian.com/publicInfo?printid=9ef2ed4b7fd2c810847ffa5fa85bce38
+11:56:57,645 scrapy.extensions.feedexport INFO Stored json feed (75 items) in: exports/archive/export_ucdp-smolian_2023-01-31 11:56:49.402843.json
+11:56:57,647 scrapy.statscollectors INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 31379,
+ 'downloader/request_count': 79,
+ 'downloader/request_method_count/GET': 79,
+ 'downloader/response_bytes': 888941,
+ 'downloader/response_count': 79,
+ 'downloader/response_status_count/200': 79,
+ 'elapsed_time_seconds': 7.996585,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 1, 31, 9, 56, 57, 644748),
+ 'item_scraped_count': 75,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 81,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 201809920,
+ 'memusage/startup': 201809920,
+ 'request_depth_max': 4,
+ 'response_received_count': 79,
+ 'scheduler/dequeued': 79,
+ 'scheduler/dequeued/memory': 79,
+ 'scheduler/enqueued': 79,
+ 'scheduler/enqueued/memory': 79,
+ 'start_time': datetime.datetime(2023, 1, 31, 9, 56, 49, 648163)}
+11:56:57,666 root INFO ......................SPYDER CRAWLER END......................
+11:56:57,667 root INFO >>>>> Finish craw with export path: EXPORTS/ARCHIVE ......
+11:56:57,668 root INFO Start of procedure to merge UCDP export at [EXPORTS/ARCHIVE], delete_prior = True
+11:56:57,669 root INFO #merged files removed: 0
+11:56:57,671 root INFO Merging all previously downloaded files: #1
+11:56:57,687 root INFO Updated merged file (#75) created at exports/archive: merged_UCDP-SMOLIAN_2023-01-31 11:56:57.681195.json 
+11:56:57,696 root INFO >>>>> # observations in latest merge: 75 ......
+11:56:57,832 numexpr.utils INFO Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+11:56:57,832 numexpr.utils INFO NumExpr defaulting to 8 threads.
